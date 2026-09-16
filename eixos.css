@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(128, 87, 146);
+    background-image: url(img/image\ copy\ 22.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 85px;
+    border: 5px solid white;
+}
+.areas{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.bloco{
+    text-align: center;
+}
+
+.bloco h2{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bloco img{
+    width: 220px;
+    border-radius: 40px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(to right,
+    #2d1b4d,
+    #000000,
+    #6f4ba1);
+
+    color: white;
+}
+
+h1{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.card{
+    width: 220px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    background: white;
+}
+
+.card h2{
+    margin-top: 15px;
+
+    font-size: 30px;
+}
+
+.card p{
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 20px 0;
+}
+
+.botao{
+
+    text-decoration: none;
+
+    background: linear-gradient(to right,
+    #714d9b,
+    #5911a0);
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    transition: 0.4s;
+
+    display: inline-block;
+
+    box-shadow: 0 0 10px rgba(176,108,255,0.7);
+}
+
+.botao:hover{
+
+    transform: scale(1.1);
+
+    box-shadow:
+    0 0 20px #714990,
+    0 0 40px #714990;
+
+    background: linear-gradient(to right,
+    #4c1d79,
+    #3e0f78);
+}
+
+.botao:active{
+
+    transform: scale(0.95);
+}
+
+.money{
+    margin-top: 90px;
+}

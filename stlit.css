@@ -1,0 +1,122 @@
+
+
+h3{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    font-size: x-large;
+}
+
+h5{
+    text-align: center;
+    font-size: x-large;
+}
+p{
+    text-align: center;
+}
+
+header img{
+    width: 250px;
+    height: 250px;
+    border-radius: 85px;
+    border: 5px solid white;
+}
+
+.center{
+    text-align: center;
+    
+}
+
+footer img{
+    width: 720px;
+    height: 400px;
+}
+
+footer.center{
+    text-align: center;
+}
+
+h1{
+    text-align:left
+}
+a{
+    color: white;
+}
+
+body{
+    flex-direction: column;
+    margin: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #9863c4, #edd8ff);
+    font-family: Georgia, serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.logos{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+}
+
+.logo{
+    width: 300px;
+}
+
+.card-formacao{
+    width: 500px;
+
+    background-color: rgba(255,255,255,0.15);
+
+    border: 2px solid rgba(255,255,255,0.2);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.card-formacao h1{
+
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.card-formacao p{
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+h5{
+    color: white;
+}
+
+.cartao{
+    border-radius: 45px;
+}
