@@ -1,3 +1,3 @@
-<script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-</script>
+document.querySelectorAll("[data-ano]").forEach(function (elemento) {
+    elemento.textContent = new Date().getFullYear();
+});

@@ -1,122 +1,121 @@
+/* =========================================================
+   Páginas: Sobre mim, Formação e Contatos
+   ========================================================= */
 
+/* ---------- Sobre mim ---------- */
 
-h3{
+.retrato {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto 26px;
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    background: var(--roxo-100);
+    object-fit: cover;
+    object-position: center 20%;
+    box-shadow: var(--sombra-forte);
+}
+
+.texto-sobre {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.slides {
+    margin-top: 52px;
+}
+
+.slides h2 {
+    margin-bottom: 22px;
     text-align: center;
 }
 
-h4{
-    text-align: center;
-    font-size: x-large;
-}
-
-h5{
-    text-align: center;
-    font-size: x-large;
-}
-p{
-    text-align: center;
-}
-
-header img{
-    width: 250px;
-    height: 250px;
-    border-radius: 85px;
-    border: 5px solid white;
-}
-
-.center{
-    text-align: center;
-    
-}
-
-footer img{
-    width: 720px;
-    height: 400px;
-}
-
-footer.center{
-    text-align: center;
-}
-
-h1{
-    text-align:left
-}
-a{
-    color: white;
-}
-
-body{
-    flex-direction: column;
-    margin: 0;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #9863c4, #edd8ff);
-    font-family: Georgia, serif;
-}
-
-.container{
+.slides-lista {
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
     align-items: center;
-
-    gap: 40px;
+    gap: 22px;
 }
 
-.logos{
+.slides-lista img {
+    width: min(100%, 880px);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+/* ---------- Formação ---------- */
+
+.logos {
     display: flex;
-
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-
-    gap: 80px;
+    justify-content: center;
+    gap: 40px 56px;
+    margin-bottom: 32px;
 }
 
-.logo{
-    width: 300px;
+.logo {
+    width: min(260px, 38vw);
+    height: auto;
 }
 
-.card-formacao{
-    width: 500px;
-
-    background-color: rgba(255,255,255,0.15);
-
-    border: 2px solid rgba(255,255,255,0.2);
-
-    border-radius: 25px;
-
-    padding: 40px;
-
+.card-formacao {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    background: #ffffff;
+    box-shadow: var(--sombra);
     text-align: center;
-
-    backdrop-filter: blur(10px);
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
-.card-formacao h1{
+.card-formacao h2 {
+    margin-bottom: 22px;
+}
 
-    color: white;
+.card-formacao ul {
+    display: grid;
+    gap: 14px;
+    text-align: left;
+}
+
+.card-formacao li {
+    padding: 14px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background: var(--roxo-50);
+}
+
+.card-formacao strong {
+    display: block;
+    color: var(--roxo-900);
+}
+
+.card-formacao span {
+    font-size: 0.92rem;
+    color: var(--texto-suave);
+}
+
+/* ---------- Contatos ---------- */
+
+.contato {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.contato img {
+    width: 100%;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra-forte);
+}
+
+.contato-aviso {
+    margin-top: 18px;
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 35px;
-}
-
-.card-formacao p{
-    color: white;
-
-    font-size: 20px;
-
-    line-height: 1.5;
-}
-
-h5{
-    color: white;
-}
-
-.cartao{
-    border-radius: 45px;
+    font-size: 0.95rem;
 }

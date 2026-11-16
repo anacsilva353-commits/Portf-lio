@@ -1,70 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-
+    <meta name="description" content="Login do portfólio de Ana Clara.">
+    <title>Login | Ana Clara</title>
     <link rel="stylesheet" href="login.css">
 </head>
 
-
 <body>
-    <div class="center">
-        <h1>LOGIN</h1>
+    <main class="login-card">
+        <h1>Login</h1>
+        <p class="login-sub">Acesse o portfólio de Ana Clara.</p>
 
         <form onsubmit="logar(); return false">
-            <div class="txt_field">
+            <label for="login">Usuário</label>
+            <input type="text" id="login" placeholder="seu@email.com" autocomplete="username" required>
 
-                <input type="text" id="login" required>
-
-                <label>Usuário</label>
-            </div>
-
-            <div class="txt_field">
-
-                <input type="password" id="senha" required>
-
-                <label>Senha</label>
-
-            </div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Sua senha" autocomplete="current-password" required>
 
             <div class="pass">
-
-                Esqueceu a senha?
-
+                <a href="#">Esqueceu a senha?</a>
             </div>
 
             <div class="botoes">
-
-                <input
-                type="submit"
-                value="Conectar"
-                class="btn-conectar"
-
-                >
-
-                <input 
-                type="button"
-                value="Cancelar"
-                class="btn-cancelar"
-                onclick="cancelar()"
-
-                >
-
+                <button type="submit" class="btn-conectar">Conectar</button>
+                <button type="button" class="btn-cancelar" onclick="cancelar()">Cancelar</button>
             </div>
 
-            
             <div class="signup_link">
-                <a href="#">
-                    Não é membro? Cadastre-se!
-                </a>
+                <a href="#">Não é membro? Cadastre-se!</a>
             </div>
-
         </form>
+    </main>
 
-    </div>
     <script src="login.js"></script>
 </body>
+
 </html>

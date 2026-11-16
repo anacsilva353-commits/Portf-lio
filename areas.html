@@ -1,68 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="eixos.css">
-    <title>ÁREAS</title>
+    <meta name="description" content="Atividades do portfólio organizadas por área de conhecimento.">
+    <title>Áreas por conhecimento | Ana Clara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eixos.css">
 </head>
+
 <body>
-    <header>
-        <h1>ÁREAS POR CONHECIMENTO:</h1>
-    
-<section class="areas">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="home.html">Ana Clara <span>portfólio</span></a>
 
-    <div class="card">
-        
-        <h2>LINGUAGENS</h2>
-        <a href="linguage2.html"><img src="img/image copy 8.png"></a>
-    </div>
-
-    <div class="card">
-        <h2>MATEMÁTICA</h2>
-        <a href="matemat2.html"><img src="img/image copy 9.png"></a>
-    </div>
-
-    <div class="card">
-        <h2>C. HUMANAS</h2>
-        <a href="c.human2.html"><img src="img/image copy 10.png"></a>
-    </div>
-
-    <div class="card">
-        <h2>C. NATUREZA</h2>
-        <a href="c.natur2.html"><img src="img/image copy 11.png"></a>
-    </div>
-
-    <div class="card">
-        <h2>SENAI</h2>
-        <a href="senai2.html"><img src="img/image copy 12.png"></a>
-    </div>
-
-</section>
-<div class="button">
-<nav>
-
-    <ul>
-
-        <li><a class="botao" href="EIXO1.HTML">EIXO I</a></li>
-
-        <li><a class="botao" href="EIXO2.HTML">EIXO II</a></li>
-
-        <li><a class="botao" href="EIXO3.HTML">EIXO III</a></li>
-
-        <li><a class="botao" href="EIXO4.HTML">EIXO IV</a></li>
-
-    </ul>
-
-</nav>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="indexx.html">Sobre mim</a>
+                <a href="project.html">Formação</a>
+                <a href="areas.html">Áreas</a>
+                <a href="anexos.html">Anexos</a>
+                <a href="contact.html">Contatos</a>
+            </nav>
+        </div>
     </header>
 
-        <section class="money">
-        <footer>
-            <p>© 2026 - Aninhas - Todos os direitos reservados
-            </p>
-        </footer>
-    </section>
+    <main>
+        <section class="pagina-topo">
+            <h1>Áreas por conhecimento</h1>
+            <p>Escolha uma área para ver as atividades que selecionei em cada eixo.</p>
+        </section>
+
+        <section class="areas" aria-label="Áreas de conhecimento">
+            <a class="area-card" href="linguage2.html">
+                <img src="img/image copy 8.png" alt="">
+                <h2>Linguagens</h2>
+            </a>
+
+            <a class="area-card" href="matemat2.html">
+                <img src="img/image copy 9.png" alt="">
+                <h2>Matemática</h2>
+            </a>
+
+            <a class="area-card" href="c.human2.html">
+                <img src="img/image copy 10.png" alt="">
+                <h2>C. Humanas</h2>
+            </a>
+
+            <a class="area-card" href="c.natur2.html">
+                <img src="img/image copy 11.png" alt="">
+                <h2>C. Natureza</h2>
+            </a>
+
+            <a class="area-card" href="senai2.html">
+                <img src="img/image copy 12.png" alt="">
+                <h2>SENAI</h2>
+            </a>
+        </section>
+
+        <section class="eixos">
+            <h2>Atividades por eixo</h2>
+
+            <nav class="eixos-nav" aria-label="Eixos">
+                <a class="botao" href="EIXO1.HTML">Eixo I</a>
+                <a class="botao" href="EIXO2.HTML">Eixo II</a>
+                <a class="botao" href="EIXO3.HTML">Eixo III</a>
+                <a class="botao" href="EIXO4.HTML">Eixo IV</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span data-ano>2026</span> · Aninhas · Todos os direitos reservados</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

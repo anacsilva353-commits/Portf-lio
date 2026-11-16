@@ -1,23 +1,21 @@
 function logar() {
-    var login = document.getElementById("login").value;
-    var senha = document.getElementById("senha").value;
+    var login = document.getElementById("login").value.trim();
+    var senha = document.getElementById("senha").value.trim();
+    var usuarios = ["admin@senai", "prof@email"];
 
-    if(login == "admin@senai", "prof@email" && senha == "123") {
-
+    if (usuarios.includes(login) && senha === "123") {
         alert("Login realizado com sucesso!");
-
         window.location.href = "home.html";
+    } else {
+        alert("Login ou senha incorretos!");
     }
-
-
-else  if (login == "admin@senai" && senha == "123") {
-
-    alert("Login realizado com sucesso!");
-    
-    window.location.href = "home.html";
 }
 
-else{
-    alert("Login ou senha incorretos!");
-}
+function cancelar() {
+    var campoLogin = document.getElementById("login");
+    var campoSenha = document.getElementById("senha");
+
+    campoLogin.value = "";
+    campoSenha.value = "";
+    campoLogin.focus();
 }

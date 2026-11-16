@@ -1,168 +1,168 @@
-*{
-    box-sizing:border-box
+/* =========================================================
+   Página de login
+   ========================================================= */
+
+:root {
+    --roxo-900: #2e1065;
+    --roxo-700: #5b21b6;
+    --roxo-600: #6d28d9;
+    --roxo-500: #7c3aed;
+    --roxo-200: #ddd6fe;
+    --roxo-100: #ede9fe;
+    --roxo-50: #f8f5ff;
+    --texto: #2b1b45;
+    --texto-suave: #5f4b7d;
 }
 
-body{
-    margin: 0%;
-    padding: 0%;
-    font-family:'Times New Roman', Times, serif;
-    background: linear-gradient(120deg, #421da7, #2b106b, #885dff, #6112f3);
-    height: 100vh;
-    overflow: hidden;
-
+* {
+    box-sizing: border-box;
 }
 
-.center{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: white;
-    border-radius: 10px;
-    padding: 0 40px 30px 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: var(--texto);
+    background: linear-gradient(135deg, #2e1065 0%, #5b21b6 55%, #7c3aed 100%);
 }
 
-.center h1{
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #c4b5fd;
+    outline-offset: 3px;
+}
+
+.login-card {
+    width: min(100%, 400px);
+    padding: 34px 32px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 24px 60px rgba(23, 7, 54, 0.45);
+}
+
+.login-card h1 {
+    color: var(--roxo-900);
+    font-size: 1.7rem;
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid rgb(30, 3, 65);
 }
 
-form .txt_field{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-
+.login-sub {
+    margin: 8px 0 24px;
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+    text-align: center;
 }
 
-.txt_field input{
-    width:100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
+.login-card label {
+    display: block;
+    margin: 18px 0 6px;
+    color: var(--roxo-900);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--roxo-200);
+    border-radius: 12px;
+    background: var(--roxo-50);
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 1rem;
     outline: none;
-
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.txt_field label{
-    position: absolute;
-    top: -10px;
-    left: 5px;
-    color: #301380;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: 0.5s;
-
+.login-card input:focus {
+    border-color: var(--roxo-500);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15);
 }
 
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label{
-    top: -5px;
-    color: #6112f3;
+.pass {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 0.88rem;
 }
 
-.pass{
-    margin-bottom: 20px;
-    color:#2b106b;
-    cursor: pointer;
+.pass a {
+    color: var(--roxo-700);
+    text-decoration: none;
 }
 
-.pass:hover{
+.pass a:hover {
     text-decoration: underline;
 }
 
-.botoes{
+.botoes {
     display: flex;
-    gap: 15px;
-    width: 100%;
+    gap: 12px;
+    margin-top: 26px;
 }
 
-.botoes input{
+.botoes button {
     flex: 1;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 18px;
+    height: 48px;
+    border: 1.5px solid transparent;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
-    outline: none;
-    transition: 0.3s;
+    transition: background 0.25s, border-color 0.25s, transform 0.2s;
 }
 
-.btn-conectar{
-    border: 1px solid #6f5aa0;
-    background: #6f5aa0;
-    color: #e0d9f5;
+.botoes button:active {
+    transform: scale(0.98);
 }
 
-.btn-conectar:hover{
-    background:#450fa8;
-    border-color: #6112f3;
+.btn-conectar {
+    background: var(--roxo-600);
+    color: #ffffff;
 }
 
-.btn-cancelar{
-    border: 1px solid #6f5aa0;
-    background: #e0d9f5;
-    color: #6f5aa0,;
+.btn-conectar:hover {
+    background: var(--roxo-700);
 }
 
-.btn-cancelar:hover{
-    background:#6112f379;
+.btn-cancelar {
+    border-color: var(--roxo-200);
+    background: #f3edff;
+    color: var(--roxo-700);
 }
 
-.signup_link{
-    margin: 30px 0 0;
+.btn-cancelar:hover {
+    background: #e9e0ff;
+}
+
+.signup_link {
+    margin-top: 24px;
+    color: var(--texto-suave);
+    font-size: 0.92rem;
     text-align: center;
-    font-size: 16px;
 }
 
-.signup_link a{
+.signup_link a {
+    color: var(--roxo-700);
+    font-weight: 600;
     text-decoration: none;
-    color: #301380;
 }
 
-.signup_link a:hover{
+.signup_link a:hover {
     text-decoration: underline;
 }
 
-.erro{
-    text-align: center;
-} 
+@media (max-width: 420px) {
+    .login-card {
+        padding: 28px 22px;
+    }
 
-#mensagem{
-    display:block;
-    width: 100%;
-    text-align: center;
-    background: #e0d9f5;
-    color:#6f5aa0;
-    border: 1px solid #6f5aa0;
-    border-radius: 6px;
-    padding: 10px;
-    margin: 20px 0;
-    font-size: 16px;
-    font-weight: bold;
-
-}
-
-.texto-erro{
-    font-size: 20px;
-    font-weight: bold;
-    color:#2b106b;
-}
-
-.texto-ajuda{
-    font-size: 15px;
-    color:#2b106b;
-    margin-bottom: 30px;
-}
-
-@media (max-width: 500px){
-    .center{
-        width: 90%;
-        padding: 0 25px 25px 25px;
+    .botoes {
+        flex-direction: column;
     }
 }
